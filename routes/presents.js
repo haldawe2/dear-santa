@@ -40,6 +40,18 @@ router.post('/new', async function (req, res, next) {
   }
 });
 
+/* GET delete gift. */
+/* ROUTE /presents/delete/:id */
+router.get('/delete/:id', async function (req, res, next) {
+  try {
+    const presentFromDB = await Present.findByIdAndDelete(req.params.id);
+    res.status(200).redirect('/presents');
+  } catch (error) {
+    console.error(error);
+    next(error);
+  }
+});
+
 /* GET present details. */
 /* ROUTE /presents/:id */
 router.get('/:id', async function (req, res, next) {
