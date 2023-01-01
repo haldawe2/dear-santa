@@ -1,12 +1,85 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 6vw;
+  font: 0.9em "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url('../images/christmas-tree-background-free-vector.webp');
 }
 
-a {
-  color: #00B7FF;
+nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+a,
+button {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+}
+
+nav a {
+  background-color: whitesmoke;
+  padding: 2vw 6vw;
+  color: black;
+  margin: 0 6vw;
 }
 
 img {
-  width: 300px;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.present-partial,
+#present,
+form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(211, 211, 19);
+  border-radius: 25px;
+  padding: 3vw;
+  margin: 2vh;
+}
+
+h4 {
+  font-weight: bold;
+  margin: 2vw;
+  text-align: center;
+}
+
+.present-partial .links {
+  text-align: center;
+}
+
+img {
+  margin: 3vw 0;
+}
+
+.present-partial .links a {
+  display: inline-block;
+  background-color: brown;
+  color: whitesmoke;
+  padding: 2vw 6vw;
+  margin: 0 2vw;
+}
+
+#present p {
+  margin: 2vw;
+}
+
+#present .italic {
+  font-style: italic;
+}
+
+#form {
+  align-items: unset;
+}
+
+#form input {
+  margin-bottom: 3vw;
+}
+
+#form button {
+  margin-top: 2vw;
+  background-color: brown;
+  color: whitesmoke;
 }
